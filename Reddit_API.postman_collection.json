@@ -7,6 +7,20 @@
 	"item": [
 		{
 			"name": "First Case",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bb5544c6-9754-4e50-8726-39512a095a90",
+						"exec": [
+							"pm.test(\"C357 Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "basic",
